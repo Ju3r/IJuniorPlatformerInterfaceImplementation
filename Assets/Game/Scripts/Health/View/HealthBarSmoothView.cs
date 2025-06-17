@@ -7,7 +7,7 @@ public class HealthBarSmoothView : HealthBarView
 
     private Coroutine _smoothTransitionCoroutine;
 
-    public override void UpdateUI(float currentValue, float maxValue)
+    public override void UpdateUserInterface(float currentValue, float maxValue)
     {
         if (_smoothTransitionCoroutine != null)
         {

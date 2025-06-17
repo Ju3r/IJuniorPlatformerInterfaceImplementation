@@ -11,7 +11,7 @@ public class HealthBarView : HealthView
         Slider = GetComponent<Slider>();
     }
 
-    public override void UpdateUI(float currentValue, float maxValue)
+    public override void UpdateUserInterface(float currentValue, float maxValue)
     {
         Slider.value = currentValue / maxValue;
     }

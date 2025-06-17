@@ -11,7 +11,7 @@ public class TextHealthView : HealthView
         _text = GetComponent<TMP_Text>();
     }
 
-    public override void UpdateUI(float currentValue, float maxValue)
+    public override void UpdateUserInterface(float currentValue, float maxValue)
     {
         _text.text = $"{currentValue} / {maxValue}";
     }
